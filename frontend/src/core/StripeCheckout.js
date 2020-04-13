@@ -47,10 +47,10 @@ const StripeCheckout = ({
       body: JSON.stringify(body)
     })
     .then(response => {
-      // console.log(response)
+      console.log(response)
       // create method
       const {status} = response
-      // console.log('STATUS', status)
+      console.log('STATUS', status)
     })
     .then(() => {
       return (
