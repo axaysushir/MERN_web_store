@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.btn,
+.jumbotron,
+.nav :hover {
+  border-radius: 0px;
+}
+
+body {
+  /* background: #343a40; */
+  /* background: linear-gradient(to right, rgb(37, 34, 192), rgb(216, 8, 26)); */
+  /* background: rgb(238, 20, 39); */
+  /* background: rgb(3, 3, 163);  #1974d2*/
+  background: #030355;
+  /* #283646 */
+}
+
+/* footer { */
+  /* position: inherit; */
+  /* bottom: 0;
+  left: 0;
+  right: 0; */
+/* } */
+
+.logo {
+  /* position: relative; */
+  padding: 10px 10px 6px 20px;
+  font-size: 2rem;
+}
+
+li:hover {
+  border: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+.card-rounded {
+  border-bottom-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+
+.jumbotron {
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  box-shadow: 5px 5px 3px rgba(83, 83, 250, 0.6), 5px 5px 3px rgb(129, 129, 153);
+  background: linear-gradient(to right, rgb(37, 34, 192), rgb(216, 8, 26), rgb(231, 255, 15));
+}
+
+.bg-card {
+  background: #1e022e;
+}
+
+.contact-img {
+  width: 500px;
+  position: relative;
+ 
+}
+form {
+  width: 500px;
+  position: absolute;
+  margin-left: 600px;
+  margin-right: 20px;
+  top: 0;
+  
+}
