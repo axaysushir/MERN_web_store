@@ -126,3 +126,37 @@ export const updateCategory = (categoryId, userId, token, category) => {
 .catch(err => console.log(err))
 
 }
+
+
+export const createOrder = (userId, token, order) => {
+  return fetch(`${API}/category/order/${userId}`, {
+    method: "POST", /// header info
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`
+    },
+    body: JSON.stringify(order)
+  })
+  .then(response => {
+      return response.json()
+  })
+  .catch(err => console.log(err))
+};
+
+export const getAllOrder = (userId) => {
+  return fetch(`${API}/order/all/${userId}`, {
+    method: 'GET',
+  })
+    .then(response => {
+      return response.json()
+    })
+    .catch(err => console.log(err))
+}
+
+export const getOrderStatus = (userId, token, order, status) => {
+  return fetch(`${API}/order/status/${userId}`, {
+    method: 'GET',
+  })
+    .then(response => response.json())
+}

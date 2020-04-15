@@ -63,3 +63,13 @@ form {
   top: 0;
   
 }
+
+.footer-ul > li {
+  list-style: none;
+  float: left;
+}
+
+.footer-ul > li:hover {
+  font-size: medium;
+  color: yellow;
+}

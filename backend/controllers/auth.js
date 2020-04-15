@@ -4,7 +4,7 @@ var jwt = require('jsonwebtoken')
 var expressJwt = require('express-jwt')
 
 exports.signup = (req, res) => {
-    // console.log('REQ BODY', req.body); // check the requesr body
+    // console.log('REQ BODY', req.body); // check the request body
     const errors = validationResult(req)
     if (!errors.isEmpty()) {
         return res.status(422).json({
@@ -47,13 +47,13 @@ exports.signin = (req, res) => {
 
         if(!user.authenticate(password)) {
            return res.status(401).json({
-                error: "Email password do not match."
+                error: "Email & Password does not match."
             })
         }
         // crete toekn
         const token = jwt.sign({_id: user._id}, process.env.SECRET)
         // put in cookie
-        res.cookie('token', token, {expire: new Date() + 9999})
+        res.cookie('token', token, {expire: new Date() + 3600})
 
         // send res to frontend
         const {_id, name, email, role} = user

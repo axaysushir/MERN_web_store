@@ -25,6 +25,13 @@ const Base = ({
                     <Link to='/contact'>
                     <button className='btn btn-warning rounded'>Contact</button>
                     </Link>
+                    <p className='mt-3'>Follow Us On:</p>
+                    <ul className='list-group footer-ul'>
+                        <li><span className='fas fa-facebook'></span>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                        <li>LinkedIn</li>
+                    </ul>
                 </div>
                 <div className="container">
                     <span className='text-muted'>

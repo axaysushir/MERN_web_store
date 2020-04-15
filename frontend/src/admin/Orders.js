@@ -1,13 +1,19 @@
 import React from "react";
 import Base from "../core/Base";
-
+import { Link } from "react-router-dom";
+import { isAuthenticated } from "../auth/helper";
 
 const Order = () => {
-    return(
-        <Base title='Manage orders' description='Manage your all orders'>
-        <h1>Order page</h1>
-        </Base>
-    )
-}
+  const { user: {name, email, role} } = isAuthenticated();
 
-export default Order
+    
+  return (
+    <Base title="Manage orders" description="Manage your all orders">
+      <div className="row">
+       
+      </div>
+    </Base>
+  );
+};
+
+export default Order;
