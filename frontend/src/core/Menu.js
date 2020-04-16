@@ -12,7 +12,7 @@ const currentTab = (history, path) => {
 
 const Menu = ({ history }) => (
   <div>
-    <ul className="nav bg-primary">
+    <ul className="nav">
     <i className="fa fa-grav logo"></i>
       <li className="nav-item">
       {/* <i class="fas fa-tshirt"></i> */}

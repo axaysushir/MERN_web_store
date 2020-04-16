@@ -15,12 +15,9 @@ body {
   /* #283646 */
 }
 
-/* footer { */
-  /* position: inherit; */
-  /* bottom: 0;
-  left: 0;
-  right: 0; */
-/* } */
+.nav {
+  background-color: rgb(79, 89, 223);
+}
 
 .logo {
   /* position: relative; */
@@ -55,7 +52,7 @@ li:hover {
   position: relative;
  
 }
-form {
+.contact-form {
   width: 500px;
   position: absolute;
   margin-left: 600px;
@@ -64,12 +61,21 @@ form {
   
 }
 
-.footer-ul > li {
+.head {
+  height: 40vh;
+  background-color: rgb(79, 89, 223);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+
+/* .footer-ul > li {
   list-style: none;
-  float: left;
 }
 
 .footer-ul > li:hover {
   font-size: medium;
   color: yellow;
-}
+} */
